@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.footerContainer{
+    height: 200px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+}
+
+.seccion{
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 20%;
+}
+
+.centrar{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.img{
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+}
+
+.integrantesInfo{
+    position: relative;
+    left: 0;
+}
+
+.integrantesInfo li{
+    margin: 10%;
+    font-family: 'Montserrat', sans-serif;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.centrarVertical{
+    flex-direction: column;
+}
+
+.buttons{
+    margin: 10px;
+    font-size: 25px;
+    color: #edf0f1;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    border: solid;
+    border-radius: 10px;
+    border-color:  #edf0f1;
+    padding: 5px;
+    background-color: #000;
+    transition: background-color 0.3s, color 0.3s ease-in-out 0s;
+}
+
+.buttons:hover{
+    color: #000;
+    cursor: pointer;
+    background-color:#edf0f1;
+}
+
+.andres {
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #edf0f1;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 790px ){
+    .integrantesInfo li{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 789px ){
+    .integrantesInfo li{
+        font-size: 8px;
+    }
+    .buttons{
+       
+        font-size: 15px;
+    }
+    
+}
+
+
+@media screen and (max-width: 650px ){
+    .footerContainer{
+        height: 800px;
+        width: 100%;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .integrantesInfo li{
+        font-size: 12px;
+    }
+    .buttons{
+       
+        font-size: 20px;
+    }
+    .andres {
+        display: none;
+    }
+  
+}

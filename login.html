@@ -1,0 +1,34 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pageStyles/normalize.css">
+    <link rel="stylesheet" href="pageStyles/login.css">
+    <link rel="shortcut icon" href="images/andresesIcon.png"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav id="navBar"></nav>
+    <!--CONTENIDO-->
+    <div class="mainContainer">
+        <form class="loginContainer" id="loginForm">
+            <img class="loginImage" id="loginImage" src="images/user.png" alt="loginImage">
+            <h2 class="loginTitle" id="loginTitle">Iniciar Sesión</h2>
+            <input class="textfield" id="userTextField" type="email" placeholder="Correo electronico" required>
+            <input class="textfield" id="passwordTextField"  type="password" placeholder="Contraseña" required>
+            <input class="inputButtonLogin" id="loginButtonLogin" type="submit" value="Ingresar">
+            <input class="inputButtonLogin" id="registerButtonLogin" type="button" value="Registrarse">
+        </form>
+    </div>
+    <!--FOOTER-->
+    <footer id="footer"></footer>
+    <!--JS PARA AGREGAR LOS ELEMENTOS DENTRO DEL DOCUMENTO ACTUAL-->
+    <script src="pageScripts/AddElements.js"></script>
+    <script src="pageScripts/Login.js" type="module"></script>
+</body>
+
+</html>
