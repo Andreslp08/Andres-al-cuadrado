@@ -88,9 +88,8 @@ body{
 }
 
 .cover{
-    width: 98%;
+    width: 90%;
     border-radius: 10px;
-    height: 60vh;
     background-color: rgb(19, 19, 19);
 }
 
